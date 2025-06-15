@@ -1,0 +1,23 @@
+@reference "tailwindcss";
+@reference "../../globals.css";
+@reference "./PageNode.module.css";
+
+.pageNavEditor {
+    @apply w-full bg-editor-background flex items-center relative;
+}
+
+.pageNodesContainer {
+    @apply flex items-center p-4 pr-0;
+    max-width: calc(100% - 8rem);
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.addPageButton {
+    @apply nodeButton;
+
+    label {
+        @apply ml-2;
+    }
+}
